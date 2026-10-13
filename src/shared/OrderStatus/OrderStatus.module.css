@@ -1,0 +1,84 @@
+.orderArrow {
+    position: relative;
+}
+
+.label,
+.data {
+    font-size: 16px;
+}
+
+.orderArrow::before {
+    content: "";
+    position: absolute;
+    top: 28%;
+    left: -8rem;
+    width: 94%;
+    height: 0.25rem;
+    background-color: #2F60EA;
+    transform: translateY(-50%);
+}
+
+.orderArrow:first-child::before {
+    display: none;
+}
+
+@media (max-width: 1680px) {
+    .orderArrow::before {
+        content: "";
+        position: absolute;
+        top: 28%;
+        left: -7rem;
+        width: 87%;
+        height: 0.25rem;
+        background-color: #2F60EA;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 1540px) {
+    .orderArrow::before {
+        content: "";
+        position: absolute;
+        top: 28%;
+        left: -6rem;
+        width: 87%;
+        height: 0.25rem;
+        background-color: #2F60EA;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 1280px) {
+    .orderArrow::before {
+        content: "";
+        position: absolute;
+        top: 28%;
+        left: -4rem;
+        width: 79%;
+        height: 0.25rem;
+        background-color: #2F60EA;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 1025px) {
+    .orderArrow {
+        width: 83dvw;
+    }
+
+    .orderArrow::before {
+        content: "";
+        position: absolute;
+        top: 28%;
+        left: -4rem;
+        width: 80%;
+        height: 0.25rem;
+        background-color: #2F60EA;
+        transform: translateY(-50%);
+    }
+
+    .label,
+    .data {
+        font-size: 13px;
+    }
+}

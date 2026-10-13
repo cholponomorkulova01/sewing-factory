@@ -1,0 +1,1 @@
+export { PasswordUpdate } from './ui/PasswordUpdate';

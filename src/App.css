@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: "Inter", sans-serif;         
+}
+
+@layer utilities {
+  .btn_primary_blue  { 
+    @apply text-white bg-primary-blue sm:text-secondary-medium text-medium sm:py-4 sm:px-24 py-3 px-12 font-bold rounded-[51px] duration-500 sm:my-4 my-2;
+  }
+  .btn_primary_border { 
+    @apply text-primary-blue bg-white border-[0.5px] border-primary-blue;
+  }
+
+  .btn_primary_blue_regis  { 
+    @apply text-white bg-primary-blue sm:text-secondary-medium text-medium sm:py-4 sm:px-14 py-3 px-12 font-bold rounded-[51px] duration-500 sm:my-4 my-2;
+  }
+
+  .max-container {
+    @apply mx-auto max-w-[1440px];
+  }
+
+  .padding-container {
+    @apply px-6 lg:px-20 3xl:px-0;
+  }
+  
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .flexStart {
+    @apply flex items-center justify-start;
+  }
+}
